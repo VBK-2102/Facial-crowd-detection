@@ -1,61 +1,84 @@
-Crowd Detection and Emotion Analysis Project
+# Crowd Detection using Deep Learning
 
-Overview
+## 📌 Project Overview
+This project focuses on crowd detection using deep learning techniques. It utilizes OpenCV and TensorFlow/Keras to process images and detect crowded areas. The model is trained on a dataset from Kaggle to improve accuracy and efficiency in detecting crowds in various environments.
 
-This project focuses on crowd detection and emotion analysis using computer vision and deep learning. It employs OpenCV for image processing and TensorFlow/Keras for training a deep learning model to recognize emotions from facial images.
+---
 
-Features
+## 📂 Dataset
+The dataset for this project can be downloaded from Kaggle.
 
-Real-time crowd detection using OpenCV and pre-trained models.
+### 🔽 How to Download the Dataset
+1. Go to the dataset page on Kaggle: [Crowd Counting Dataset](https://www.kaggle.com/)
+2. Click on **Download**.
+3. Extract the dataset and place it in the `dataset/` directory within the project folder.
 
-Facial emotion recognition using deep learning.
+Alternatively, you can use Kaggle API:
+```bash
+pip install kaggle  # Install Kaggle API if not already installed
+mkdir dataset  # Create dataset directory
+kaggle datasets download -d <dataset-name> -p dataset/ --unzip
+```
 
-Custom training support for emotion detection.
+---
 
-Expandable functionality for real-time monitoring.
+## 🚀 Installation and Setup
+Follow these steps to set up and run the project:
 
-Installation
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/VBK-2102/crowd-detection.git
+cd crowd-detection
+```
 
-To run this project, install the required dependencies using:
+### 2️⃣ Install Dependencies
+Make sure you have Python installed (preferably version 3.8 or above).
+```bash
+pip install -r requirements.txt
+```
 
-pip install opencv-python numpy tensorflow keras
-
-Downloading the Dataset
-
-For emotion analysis, you can download the FER2013 dataset from Kaggle:
-
-Visit FER2013 Kaggle Dataset
-
-Sign in to Kaggle and download the dataset.
-
-Extract the dataset and place it in the dataset/ directory.
-
-How to Run
-
-Step 1: Run Crowd Detection
-
-python crowd_detection.py
-
-Step 2: Train Emotion Model (Optional)
-
+### 3️⃣ Run the Training Script
+To train the model, execute:
+```bash
 python train_emotion_model.py
+```
 
-Step 3: Use Trained Model for Prediction
+### 4️⃣ Run the Crowd Detection Model
+After training, run the following command to test the model:
+```bash
+python crowd_detection.py
+```
 
-python emotion_recognition.py
+---
 
-Expansion Plans
+## 🛠️ Technologies Used
+- **Python**
+- **OpenCV**
+- **TensorFlow/Keras**
+- **NumPy**
+- **Matplotlib**
 
-Crowd density estimation with YOLOv8.
+---
 
-Automated alerts for overcrowded areas.
+## 📢 Troubleshooting
+If you encounter a NumPy compatibility issue, downgrade NumPy:
+```bash
+pip install numpy==1.24.3
+```
+If OpenCV fails to import, try reinstalling it:
+```bash
+pip uninstall opencv-python opencv-contrib-python
+pip install opencv-python opencv-contrib-python
+```
 
-Integration with cloud-based AI services.
+---
 
-Contribution
+## 📜 License
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-Feel free to contribute by submitting pull requests and reporting issues.
+---
 
-License
-
-This project is open-source and available under the MIT License.
+## 👨‍💻 Author
+**Vaibhav Kalungada**  
+- GitHub: [VBK-2102](https://github.com/VBK-2102)
+- LinkedIn: [linkedin.com/vaibhav-kalungada-844790223/](https://linkedin.com/vaibhav-kalungada-844790223/)
