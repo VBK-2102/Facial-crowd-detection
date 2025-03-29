@@ -9,7 +9,7 @@ This project focuses on crowd detection using deep learning techniques. It utili
 The dataset for this project can be downloaded from Kaggle.
 
 ### 🔽 How to Download the Dataset
-1. Go to the dataset page on Kaggle: [Crowd Counting Dataset](https://www.kaggle.com/)
+1. Go to the dataset page on Kaggle: [Crowd Counting Dataset]([https://www.kaggle.com/](https://www.kaggle.com/datasets/msambare/fer2013))
 2. Click on **Download**.
 3. Extract the dataset and place it in the `dataset/` directory within the project folder.
 
